@@ -5,7 +5,7 @@
 
 	# options
 	officialRelease ? true,
-        nonlibcSrc ? { outPath = ./.; rev = 0;},  	# link to this Git repo
+        cramSrc ? { outPath = ./.; rev = 0;},  	# link to this Git repo
 	systems ? [ "x86_64-linux" ]			# systems to build on
 }:
 
