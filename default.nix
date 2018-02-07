@@ -4,7 +4,7 @@
 with import <nixpkgs> { inherit system; };
 
 stdenv.mkDerivation rec {
-	name = "cramtest";
+	name = "cram";
 	env = buildEnv { name = name; paths = nativeBuildInputs; };
 	nativeBuildInputs = [
 		python3
