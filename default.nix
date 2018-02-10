@@ -17,7 +17,7 @@ cram = python35.pkgs.buildPythonPackage rec {
 	doCheck = false;
 };
 
-in python35.withPackages (ps: [ cram])
+in python35.withPackages (ps: with ps;  [ cram pexpect ])
 )
 
 ## add .env at the end to make it work in nix-shell
